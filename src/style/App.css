@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:700');
+
+html, body {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 700;
+}
+
+a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: blue;
+  transition: color .5s;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.App {
+  text-align: center;
+}
+
+.game-board {
+  margin: 120px auto;
+  max-width: 155px;
+  position: relative;
+  z-index: 1000;
+}
+
+.square {
+  height: 50px;
+  width: 50px;
+  float: left;
+}
+
+.players {
+  padding: 30px 0 0;
+}
+
+.start-menu .menu-title img {
+  max-width: 80%;
+}
+
+.start-link {
+  padding-top: 100px;
+}
+
+.start-link a {
+  font-size: 2em;
+}
+
+.start-menu .player1 img, .start-menu .player2 img, .players img {
+  max-height: 300px;
+  max-width: 100%;
+}
+
+.game-board button.square {
+  background: transparent;
+  border: 0;
+  font-size: 2em;
+}
+
+.game-board button.square:nth-child(1) {
+  border-right: 2px solid #333;
+  border-bottom: 2px solid #333;
+}
+
+.game-board button.square:nth-child(2) {
+  border-bottom: 2px solid #333;
+}
+
+.game-board button.square:nth-child(3) {
+  border-left: 2px solid #333;
+  border-bottom: 2px solid #333;
+}
+
+.game-board button.square:nth-child(4) {
+  border-right: 2px solid #333;
+  clear: both;
+}
+
+.game-board button.square:nth-child(6) {
+  border-left: 2px solid #333;
+}
+
+.game-board button.square:nth-child(7) {
+  border-right: 2px solid #333;
+  border-top: 2px solid #333;
+  clear: both;
+}
+
+.game-board button.square:nth-child(8) {
+  border-top: 2px solid #333;
+}
+
+.game-board button.square:nth-child(9) {
+  border-left: 2px solid #333;
+  border-top: 2px solid #333;
+}
+
+#o-player {
+  display: none;
+}
+
+.winning-message {
+  padding-top: 30px;
+}
+
+.winning-message img {
+  max-height: 400px;
+}
+
+.mobile { display: none; }
+
+@media (max-width: 800px) {
+  .desktop { display: none; }
+  .mobile { display: block; padding: 20px 0; }
+  .game-board { margin: 10px auto;  max-width: 155px; }
+  .clear { clear: both; }
+  .start-link { padding-top: 20px; }
+}
